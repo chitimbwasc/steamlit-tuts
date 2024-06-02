@@ -12,7 +12,7 @@ import re
 llm = ChatOpenAI(
       model='llama2',
       base_url="http://localhost:11434/v1",
-      api_key="NA"
+      api_key=os.getenv('OPENAI_API_KEY')
     )
 
 
